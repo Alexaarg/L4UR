@@ -275,7 +275,7 @@ const SITE = {
   const checkStatus = async () => {
     setStatus('LOADING', null);
     try {
-      const r = await fetch('https://illuxat.com/api/online/BOSS \' + KAZI_ID);
+      const r = await fetch('https://illuxat.com/api/online/' + KAZI_ID);
       if (!r.ok) throw 0;
       const d = await r.json();
       const s = d && d.data && d.data.status ? String(d.data.status).toLowerCase() : '';
@@ -381,9 +381,9 @@ const SITE = {
 </body>
 </html>
 
+ 
 
-
-
-  
+ 
+ 
 
    
